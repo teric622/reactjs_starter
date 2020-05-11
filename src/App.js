@@ -42,11 +42,11 @@ function App() {
         <div className="auth-inner">
           <Switch>
             <Route exact path='/' component={Login} />
-             <Route path="/welcome-screen" component={WelcomeScreen} />
-            <Route path="/sign-in" component={Login} />
-            <Route path="/sign-up" component={SignUp} />
-            <Route path="/game-stats" component={GameStats} />
-            <Route path="/donate" component={Donate}/>
+             <Route exact path="/welcome-screen" component={WelcomeScreen} />
+            <Route exact path="/sign-in" component={Login} />
+            <Route exact path="/sign-up" component={SignUp} />
+            <Route exact path="/game-stats" component={GameStats} />
+            <Route exact path="/donate" component={Donate}/>
           </Switch>
         </div>
       </div>
