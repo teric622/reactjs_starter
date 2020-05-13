@@ -27,7 +27,7 @@ class ComputerV extends Component {
       }
     }, 100);
   };
-
+// The logic behind the game lines 31-45
   selectWinner = () => {
     const { playerOne, playerTwo } = this.state;
 
@@ -38,9 +38,9 @@ class ComputerV extends Component {
       (playerOne === "scissors" && playerTwo === "paper") ||
       (playerOne === "paper" && playerTwo === "rock")
     ) {
-      return "Player One Wins!";
+      return "You won!";
     } else {
-      return "Player Two Wins!";
+      return "Computer won";
     }
   };
   selectWeapon = weapon => {
@@ -49,12 +49,12 @@ class ComputerV extends Component {
       winner: ""
     });
   };
+ // line 57 <h1 style={{ textAlign: "center" }}>Rock Paper Scissors</h1> deleted
+
   render() {
     const { playerOne, playerTwo, winner } = this.state;
     return (
       <>
-        <h1 style={{ textAlign: "center" }}>Rock Paper Scissors</h1>
-
         <div>
           <Player weapon={playerOne} />
           <Player weapon={playerTwo} />
@@ -81,7 +81,7 @@ class ComputerV extends Component {
         </div>
         <div className="winner">{winner ? this.selectWinner() : null}</div>
         <button type="button" onClick={this.startGame}>
-          Start!
+          Play!
         </button>
       </>
     );
