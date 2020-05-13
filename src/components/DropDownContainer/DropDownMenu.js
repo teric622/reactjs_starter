@@ -17,6 +17,7 @@ function DropDownMenu () {
     <Dropdown.Item href="/sign-up">Sign-up</Dropdown.Item>
     <Dropdown.Item href="/game-stats">GameStats</Dropdown.Item>
     <Dropdown.Item href="/donate">Donate</Dropdown.Item>
+      <Dropdown.Item href="/ComputerV">Play against Computer</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
     )

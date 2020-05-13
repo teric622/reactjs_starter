@@ -9,7 +9,7 @@ import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
 import GameStats from "./components/GameStatsContainer/GameStats.js";
 import Donate from "./components/DonateContainer/Donate.js";
 import DropDownMenu from './components/DropDownContainer/DropDownMenu.js';
-import ComputerV from './components/ComputerVCompnent/ComputerV';
+import ComputerV from './components/ComputerVContainer/ComputerV.js';
 
 
 function App() {
