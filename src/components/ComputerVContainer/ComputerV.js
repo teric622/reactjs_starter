@@ -55,6 +55,7 @@ class ComputerV extends Component {
     const { playerOne, playerTwo, winner } = this.state;
     return (
       <>
+       <h3 style={{ textAlign: "center" }}>Code Diffrently  pipeline devshop</h3>
         <div>
           <Player weapon={playerOne} />
           <Player weapon={playerTwo} />

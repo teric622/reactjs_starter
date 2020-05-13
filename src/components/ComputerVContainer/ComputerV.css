@@ -6,11 +6,17 @@
 }
 
 body {
-  width: 100%;
+  width: 400%;
+  height: 100%;
   margin: 1rem auto;
   display: flex;
   justify-content: space-evenly;
 }
+ 
+
+
+
+
 
 .player {
   width: 230px;
@@ -26,7 +32,7 @@ body {
   height: 50px;
   display: inline;
   margin: auto 120px;
-  color: white (127, 119, 104);
+  color: black (127, 119, 104);
   font-size: 16px;
   border-radius: 70px;
   background: grey;
@@ -55,7 +61,7 @@ button {
   height: 50px;
   display: block;
   margin: 10px auto;
-  color: white;
+  color:white;
   font-size: 18px;
   border-radius: 25px;
   background: darkgray;
@@ -64,4 +70,15 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+body {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 10px auto;
+  color: white;
+  font-size: 18px;
+  border-radius: 25px;
+  background: darkgray;
+  outline: none;
 }
