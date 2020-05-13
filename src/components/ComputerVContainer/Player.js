@@ -1,7 +1,7 @@
 import React from "react";
-import scissors from '../assets/scissors.png';
-import rock from '../assets/rock.png';
-import paper from '../assets/paper.png';
+import scissors from './scissors.png';
+import rock from './rock.png';
+import paper from './paper.png';
 const Player = ({weapon}) => {
    return (
         <div className="player">
