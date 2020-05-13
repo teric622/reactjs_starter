@@ -8,11 +8,14 @@ import SignUp from "./components/SignUpContainer/SignUp.js";
 import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
 import GameStats from "./components/GameStatsContainer/GameStats.js";
 import Donate from "./components/DonateContainer/Donate.js";
+import DropDownMenu from './components/DropDownContainer/DropDownMenu.js';
+import ComputerV from './components/ComputerVCompnent/ComputerV';
+
 
 function App() {
   return (<Router>
     <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+    <DropDownMenu />
         <div className="container">
           <Link className="navbar-brand" to={"/sign-up"}>Code Strikers ReactJS Starter</Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -33,10 +36,13 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to={"/donate"}>Donate</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/ComputerV"}>Play against Computer</Link>
+              </li>
             </ul>
           </div>
         </div>
-      </nav>
+
 
       <div className="auth-wrapper">
         <div className="auth-inner">
@@ -47,6 +53,7 @@ function App() {
             <Route exact path="/sign-up" component={SignUp} />
             <Route exact path="/game-stats" component={GameStats} />
             <Route exact path="/donate" component={Donate}/>
+              <Route exact path="/ComputerV" component={ComputerV}/>
           </Switch>
         </div>
       </div>

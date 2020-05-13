@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #1C8EF9 !important;
+  background: #ededed !important;
   min-height: 100vh;
   display: flex;
   font-weight: 400;
@@ -78,4 +78,8 @@ body, html, .App, #root, .auth-wrapper {
   margin-left: 60px;
   background-color: white;
   border-radius: 2em;
+}
+.Btn {
+         background-color: #c87324 ;
+        border-color: #818288;
 }
