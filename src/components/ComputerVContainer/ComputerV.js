@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './ComputerV.css';
 import Player from './Player.js';
-
+import Computer from './Computer.js';
 ;
 const weapons = ["rock", "paper", "scissors"];
 class ComputerV extends Component {
